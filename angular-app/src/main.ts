@@ -1,12 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import {Component} from '@angular/core';
+import { AppComponent } from './app/app.component';
+import { provideRouter } from '@angular/router';
+import { routes } from './routes';
 
-@Component({
-  selector: 'app-root',
-  template: `
-	<p>TEST</p>
-	`,
-})
-export class App {}
-
-bootstrapApplication(App);
+bootstrapApplication(AppComponent, {
+	providers: [provideRouter(routes)],
+}).catch((err) => console.error(err));
