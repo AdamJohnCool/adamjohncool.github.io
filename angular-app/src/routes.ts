@@ -3,7 +3,7 @@ import { Home } from './homepage/home.component';
 import { About } from './about/about.component';
 import { Projects } from './projects/projects.component';
 import { Education } from './education/education.component';
-import { Contact } from './contact/contact.component';
+import { Experience } from './experience/experience.component';
 
 export const routes: Routes = [
 	{
@@ -17,6 +17,11 @@ export const routes: Routes = [
 		component: About,
 	},
 	{
+		path: 'experience',
+		title: 'Work Experience',
+		component: Experience,
+	},
+	{
 		path: 'projects',
 		title: 'Projects',
 		component: Projects,
@@ -25,11 +30,6 @@ export const routes: Routes = [
 		path: 'education',
 		title: 'Education',
 		component: Education,
-	},
-	{
-		path: 'contact',
-		title: 'Contact',
-		component: Contact,
 	},
 	{
 		path: '**',

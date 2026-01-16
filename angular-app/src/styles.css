@@ -39,34 +39,79 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 75;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 75;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 75;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 75;
+}
+
+footer {
+	height: 75px;
+	margin: 0px auto;
+    background: #89986D;
+}
+
 /* Fonts */
 .roboto-900 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings:
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 75;
 }
 
 .orbitron-500 {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Classes */
 .nav-bar {
-    height: 100px;
-    min-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*height: 80px; */
+    /*min-height: 100px; */
     width:100%;
     background: #89986D;
 }
 
 .top-bar {
 	max-width: 900px;
-	height: 100px;
+	height: 75px;
 	margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -75,7 +120,7 @@ img {
 .name {
     margin: auto 0;
     flex-shrink: 0;
-    font-size: 48px;
+    font-size: 32px;
     color: #222831;
 }
 
@@ -85,11 +130,11 @@ img {
 }
 
 .main-content {
-    min-height:  calc(100vh - 100px);
+    min-height:  100vh;
 	max-width: 900px;
     background: #F6F0D7;
     margin: 0px auto;
-    padding: 50px;
+    padding: 125px 50px 50px;
 }
 
 .fakeimg {
@@ -99,13 +144,22 @@ img {
 .home-text {
     text-align: center;
     line-height: 1.8;
-    min-height: 350px;
+}
+
+.home-text h1{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+    font-variation-settings:
+    "wdth" 75;
 }
 
 .selfie {
     height: 300px;
     width: 200px;
-    float: right;
+    margin: 0px auto;
 }
 
 .project-selector {
@@ -119,3 +173,15 @@ img {
     line-height: 1.8;
 }
 
+.work-experience-box {
+    border-style: groove;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.contact-info {
+    max-width: 900px;
+    margin: 0px auto;
+    padding-top: 10px;
+}

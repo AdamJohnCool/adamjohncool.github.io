@@ -13,11 +13,9 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 					|
 					<a href="/about">About</a>
 					|
-					<a href="/projects">Projects</a>
+					<a href="/experience">Experience</a>
 					|
 					<a href="/education">Education</a>
-					|
-					<a href="/contact">Contact</a>
 				</div>
 			</div>
 		</nav>
@@ -34,6 +32,12 @@ export class NavBar {}
 		<div class="main-content">
 			<router-outlet />
 		</div>
+		<footer>
+			<div class="contact-info">
+				<h3><u>Contact Me</u></h3>
+				<p>Email: AdamJohnCool@gmail.com</p>
+			</div>
+		</footer>
 	`,
 })
 export class AppComponent {}

@@ -8,13 +8,10 @@ import { FormsModule, ReactiveFormsModule, FormControl, FormGroup } from '@angul
 	template: `
 		<div class="home-text">
 			<div class="fakeimg selfie">Picture of me</div>
-			<h1>Quick info about me</h1>
-			<p>Name</p>
-			<p>School</p>
-			<p>Work experience</p>
-			<p>Email Address</p>
+			<h1>Adam Cool</h1>
+			<p>Computer Engineering graduate from McMaster University</p>
+			<p>Tech Enthusiast, Developer, Free Thinker</p>
 		</div>
-		<div class="fakeimg project-selector">A sliding list of projects maybe?</div>
 	`,
 })
 export class Home {}
