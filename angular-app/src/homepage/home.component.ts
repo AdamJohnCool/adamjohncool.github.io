@@ -7,9 +7,9 @@ import { FormsModule, ReactiveFormsModule, FormControl, FormGroup } from '@angul
 	imports: [],
 	template: `
 		<div class="home-text">
-			<div class="fakeimg selfie">Picture of me</div>
+			<img class="selfie" src="Selfie.JPG" alt="Selfie" height="200" />
 			<h1>Adam Cool</h1>
-			<p>Computer Engineering graduate from McMaster University</p>
+			<h3>Computer Engineer in Training</h3>
 			<p>Tech Enthusiast, Developer, Free Thinker</p>
 		</div>
 	`,

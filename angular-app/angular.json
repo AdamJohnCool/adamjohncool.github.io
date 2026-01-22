@@ -17,7 +17,7 @@
           "builder": "@angular/build:application",
           "options": {
 			"outputPath": "./build",
-            "browser": "src/main.ts",
+            "browser": "src/app.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -27,6 +27,9 @@
             ],
             "styles": [
               "src/styles.css"
+            ],
+            "scripts": [
+              "./node_modules/@tsparticles/engine/tsparticles.engine.min.js"
             ]
           },
           "configurations": {

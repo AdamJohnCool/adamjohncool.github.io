@@ -79,6 +79,12 @@ footer {
 	height: 75px;
 	margin: 0px auto;
     background: #89986D;
+    border-radius: 10px;
+    border-style: groove;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Fonts */
@@ -98,15 +104,29 @@ footer {
     font-style: normal;
 }
 
-/* Classes */
-.nav-bar {
-    position: fixed;
+nav-bar {
+    position: sticky;
     top: 0;
     left: 0;
-    /*height: 80px; */
-    /*min-height: 100px; */
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.nav-bar {
     width:100%;
     background: #89986D;
+    border-radius: 10px;
+    border-style: groove;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Classes */
+#container {
+    max-width: 900px;
+	margin: 0px auto;
 }
 
 .top-bar {
@@ -135,6 +155,8 @@ footer {
     background: #F6F0D7;
     margin: 0px auto;
     padding: 125px 50px 50px;
+    border-radius: 10px;
+    border-style: groove;
 }
 
 .fakeimg {
@@ -144,6 +166,10 @@ footer {
 .home-text {
     text-align: center;
     line-height: 1.8;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .home-text h1{
@@ -157,9 +183,8 @@ footer {
 }
 
 .selfie {
-    height: 300px;
-    width: 200px;
     margin: 0px auto;
+    border-radius: 50px;
 }
 
 .project-selector {
@@ -174,14 +199,60 @@ footer {
 }
 
 .work-experience-box {
-    border-style: groove;
+
     border-color: black;
     border-radius: 10px;
     padding: 5px;
+    border-block-start: 10px solid grey;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,.2),0px 2px 2px 0px rgba(0,0,0,.14),0px 1px 5px 0px rgba(0,0,0,.12);
 }
 
 .contact-info {
     max-width: 900px;
     margin: 0px auto;
     padding-top: 10px;
+}
+
+.experience-text {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+}
+
+.img-mcmaster {
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,.2),0px 2px 2px 0px rgba(0,0,0,.14),0px 1px 5px 0px rgba(0,0,0,.12);
+}
+
+.education-intro {
+    min-height: 200px;
+}
+
+[ngAccordionTrigger] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 1rem 0px;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  color: var(--quaternary-contrast);
+  transition: transform .3s ease-out;
+}
+.expand-icon__expanded {
+  transform: rotate(180deg);
+}
+
+.basic-accordion h3:not(:first-of-type) {
+    border-block-start: 1px solid grey;
 }

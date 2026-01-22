@@ -9,9 +9,35 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wdth,wght@75,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<meta name="robots" content="noindex">
 	</head>
 	<body>
+		<div class= "background" id="tsparticles"></div>
 		<app-root></app-root>
+        <script>
+		function setupParticlesBackground() {
+			(async () => {
+				await loadAll(tsParticles);
+
+				await tsParticles.load({
+					id: "tsparticles",
+					url: "particles.json",
+				}).then(container => {
+					console.log("callback - tsparticles config loaded");
+				})
+				.catch(error => {
+					console.error(error);
+				});
+			})();
+		}
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3.9.1/tsparticles.all.bundle.min.js"
+			async
+			defer
+			onload="setupParticlesBackground()">
+		</script>
 	</body>
 </html>
+
