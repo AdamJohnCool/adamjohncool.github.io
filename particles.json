@@ -1,0 +1,40 @@
+{
+	"autoPlay": true,
+	"background": {
+		"color": {
+			"value": "#C5D89D"
+		},
+		"opacity": 1
+	},
+	"particles": {
+		"links": {
+			"enable": true,
+			"distance": 200,
+			"opacity": 0.5,
+			"color": "#89986D"
+		},
+		"number": {
+			"density": {
+				"enable": true,
+				"value_area": 800
+			},
+			"value": 55
+		},
+		"size": {
+			"value": 3
+		},
+		"move": {
+			"direction": "none",
+			"enable": true,
+			"outMode": "bounce",
+			"random": false,
+			"speed": 2,
+			"straight": false
+		},
+		"opacity": {
+			"value": 0.9
+		},
+		"color": "#89986D"
+	},
+	"retina_detect": true
+}
