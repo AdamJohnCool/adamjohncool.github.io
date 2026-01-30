@@ -9,8 +9,10 @@ import { Navigation } from './nav-bar/nav-bar.component';
 	selector: 'app-root',
 	imports: [RouterOutlet, Navigation],
 	template: `
-		<div id="container">
-			<nav-bar />
+		<div class="main-flex container">
+			<nav>
+				<nav-bar />
+			</nav>
 			<div class="main-content">
 				<router-outlet />
 			</div>

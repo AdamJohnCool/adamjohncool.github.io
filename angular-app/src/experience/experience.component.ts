@@ -4,26 +4,33 @@ import { Component, input, output } from '@angular/core';
 	selector: 'app-experience',
 	imports: [],
 	template: `
-		<div class="experience-text">
+		<div class="experience content-box">
 			<h1>Work Experience</h1>
 
 			<div class="work-experience-box">
 				<h2>Website SEO Optimization</h2>
 				<h3>NorthernBeat</h3>
 				<p>
-					I helped improve SEO for the NorthernBeat website. Researched GoogleNews best
-					practices and made changes to the websites structure to improve chances of being
-					displayed on GoogleNews.
+					I helped improve SEO for the
+					<a target="_blank" rel="noopener noreferrer" href="https://northernbeat.ca/"
+						>NorthernBeat</a
+					>
+					website to improve visiblity through search engines and to allow the news site
+					to be displayed on GoogleNews. Researched GoogleNews best practices and made
+					changes to the webpage structure and sitemapping to align with the requirements
+					set by Google.
 				</p>
+				<p></p>
 			</div>
 
 			<br />
 			<div class="work-experience-box">
 				<h2>Python Data Manager</h2>
+				<h3>Zen Geomap Inc</h3>
 				<p>
-					Created a Python program to clean and merge datasets into a single database.
-					Data came from various sruveying senors from a drone and needed to be unified to
-					be useful.
+					I created a Python program to clean and merge raw data into a single database.
+					Data came multiple passes of a magnometer on a drone and needed to be cleaned
+					and unified to be usable for display and data analysis.
 				</p>
 			</div>
 
@@ -38,27 +45,25 @@ import { Component, input, output } from '@angular/core';
 					Access Driver.
 				</p>
 				<p>
-					Brainstorm, design, and prototype a proof-of-concept using Python Tensorflow to
-					show that AMD GPUs were capable of GPU accelerated learning.
+					The AI machine learning project was an internal demonstration to show AMDs GPUs
+					capabilities with machine learning. The project consisted of designing a network
+					for identifying signs and road ways, training it from public databases, and
+					putting it on a small form factor PC attached to an RC car that was capable of
+					self-driving on roads.
 				</p>
 				<p>
-					Designed a remote-control car that could self-steer within roadways and identify
-					signs and obstacles.
+					The memory access driver was used in an embedded SOC, system on chip, to manage
+					multiple single cored processing units, and the memory they were allowed to
+					access. The driver would recieve a stream of data packets which contained a
+					program to execute on one of the processors, it would then choose an available
+					processor, assign the start and size of memory allocted for it to access and
+					command the processor to start execution of the code.
 				</p>
 				<p>
-					Agile work environment using JIRA to manage tasks and Git version control on the
-					code base.
-				</p>
-				<p>
-					Used Confluence for finding and sharing information between members of the team.
-				</p>
-				<p>
-					Programmed and debugged driver for managing memory between multiple embedded
-					processing units on an SOC.
-				</p>
-				<p>
-					Worked closely with a team of senior developers to build automated tests and
-					integrate the driver into a larger program built on top of a Unix distro.
+					The work involved agile development of code working of JIRA to fullful daily
+					tickets and tasks. Git was used to manage to project with jenkins managing the
+					builds. Confluence was used for locating information on hardware and other
+					drivers as well as sharing information between team members.
 				</p>
 			</div>
 
@@ -67,20 +72,17 @@ import { Component, input, output } from '@angular/core';
 				<h2>Flight Simulation Model Designer</h2>
 				<h3>Hybrid Enterprises</h3>
 				<p>
-					Designed and built portable flight simulator unit for Lockheed Martin Hybrid
-					Airship.
+					I helped design and built a portable flight simulator unit for Hybrid
+					Enterprises Hybrid Airship. The flight simulator was to be used at trade shows
+					as a demonstration of the airship and it's capabilities. The flight simulator
+					used a custom built PC, 4 monitors, and a flight stick and throttle. They were
+					attached to a metal frame that could be dissassembled and packed up for
+					shipping.
 				</p>
 				<p>
-					Assembled hardware for the system, and ported an existing hybrid airship flight
-					model to new simulator software.
-				</p>
-				<p>
-					Created flight simulator booth for use at conventions and showings of the Hybrid
-					Airship.
-				</p>
-				<p>
-					Represented project at 2016 Abbotsford International Airshow operating the
-					Hybrid Airship flight simulator demo.
+					I also represented the company at the 2016 Abbotsford International Airshow to
+					help demonstration the flight simulator as well as talk with guests about the
+					airship and it's capabilities.
 				</p>
 			</div>
 
@@ -100,8 +102,9 @@ import { Component, input, output } from '@angular/core';
 				<h2>Shipyard Labourer</h2>
 				<h3>Moosonee Transportation Limited</h3>
 				<p>
-					Working for my Grandfather up in Moosonee, Ontario I got to spend a summer
-					assisting in labour around his shipping company.
+					I worked for my Grandfather up in Moosonee, Ontario at his shipping company
+					helping to do general labour around the yard. I helped with cleaning around the
+					yard, organizing inventory, and removing and securing cargo from train cars.
 				</p>
 			</div>
 

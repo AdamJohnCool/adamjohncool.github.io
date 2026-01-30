@@ -70,14 +70,18 @@ p {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
+    font-style: normal; 
     font-variation-settings:
     "wdth" 75;
 }
 
-footer {
-	height: 75px;
-	margin: 0px auto;
+.main-content a {
+    color: blue;
+    text-decoration: underline;
+}
+
+nav {
+    width:100%;
     background: #89986D;
     border-radius: 10px;
     border-style: groove;
@@ -85,6 +89,18 @@ footer {
     padding-right: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+footer {
+	height: 75px;
+    width: 100%;
+	margin: 0px auto 10px;
+    background: #89986D;
+    border-radius: 10px;
+    border-style: groove;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Fonts */
@@ -104,29 +120,22 @@ footer {
     font-style: normal;
 }
 
-nav-bar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    border-radius: 5px;
-}
-
-.nav-bar {
-    width:100%;
-    background: #89986D;
-    border-radius: 10px;
-    border-style: groove;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
 /* Classes */
-#container {
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+}
+
+.container {
     max-width: 900px;
 	margin: 0px auto;
+}
+
+.main-flex {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-bar {
@@ -150,29 +159,56 @@ nav-bar {
 }
 
 .main-content {
-    min-height:  100vh;
+    height: 100%;
 	max-width: 900px;
-    background: #F6F0D7;
-    margin: 0px auto;
-    padding: 20px 50px 50px;
-    border-radius: 10px;
-    border-style: groove;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+app-home {
+    text-align: center;
+    line-height: 1.4;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+app-home h1{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+    font-variation-settings:
+    "wdth" 75;
 }
 
 .fakeimg {
     background-color: grey;
 }
 
-.home-text {
+.home {
     text-align: center;
     line-height: 1.8;
-    padding-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.home-text h1{
+.intro {
+    padding: 75px;
+    flex: 1 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    padding: 25px;
+}
+
+.home h1{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -202,26 +238,25 @@ nav-bar {
 
     border-color: black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border-block-start: 10px solid grey;
     box-shadow: 0px 3px 1px -2px rgba(0,0,0,.2),0px 2px 2px 0px rgba(0,0,0,.14),0px 1px 5px 0px rgba(0,0,0,.12);
 }
 
-.contact-info {
-    max-width: 900px;
-    margin: 0px auto;
-    padding-top: 10px;
-}
-
-.experience-text {
+.experience {
     text-align: center;
     line-height: 1.8;
+    padding: 10px 50px 50px;
 }
 
-.background {
-    position: fixed;
-    inset: 0;
-    z-index: -10;
+.experience p {
+    text-align: left;
+}
+
+.education {
+    text-align: center;
+    line-height: 1.8;
+    padding: 30px 50px 30px;
 }
 
 .img-mcmaster {
@@ -255,4 +290,11 @@ nav-bar {
 
 .basic-accordion h3:not(:first-of-type) {
     border-block-start: 1px solid grey;
+}
+
+.content-box {
+    background: #f6f0d7d0;
+    border-radius: 10px;
+    border-style: groove;
+    margin-bottom: 10px;
 }
